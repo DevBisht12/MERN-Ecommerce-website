@@ -1,0 +1,159 @@
+hr{
+    color: #f0f0f0;
+    background-color: #f0f0f0;
+}
+.confirmOrder{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+
+}
+
+.Shipping_info {
+    border-bottom: 1px solid #f0f0f0;
+}
+.Shipping_main{
+    padding: 1rem;
+}
+.Shipping_main p{
+    margin: 10px 0;
+    opacity: 65%;
+    
+}
+.Shipping_info h2{
+    padding: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.confirmOrder_left {
+    width: 70%;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
+}
+.CartItems{
+    display: flex;
+    flex-direction: column !important;
+}
+
+
+.confirmOrder_Summery {
+    padding: 2.5rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    width: 30%;
+    flex-direction: column;
+    height: fit-content;
+    margin: 2rem;
+    border-radius: 5px;
+}
+.confirmOrder_Summery h2{
+    margin: 10px 0;
+    padding: 0;
+}
+.confirmOrder_Summery p{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    opacity: 70%;
+}
+.Summery_main p{
+    display: flex;
+    margin: 10px 0;
+    opacity: 70%;
+    justify-content: space-between;
+}
+.confirmOrder_Summery button{
+    background-color: black;
+    color: white;
+    margin: 0.5rem 0;
+    transition: 0.3s;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+.confirmOrder button:hover{
+    background-color:white;
+    color:black;
+    transition: 0.3s;
+}
+.CartItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cartItem_main img{
+    width: 80px;
+}
+.cartItem_main {
+    margin: 2rem 0;
+    border-radius: 5px;
+}
+.cartItem_main h2{
+    padding-left: 10px;
+    margin: 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+@media(max-width:900px){
+    .confirmOrder{
+        flex-wrap: wrap;
+    }
+    .confirmOrder_left {
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .CartItem{
+        width: 100%;
+    }
+    .CartItem p{
+        font-size: 20px;
+    }
+    .cartItem_main img {
+        width: 120px;
+    }
+    .confirmOrder_Summery {
+        width: 100%;
+    }
+}
+@media(max-Width:430px){
+    .confirmOrder{
+        flex-wrap: wrap;
+    }
+    
+    .confirmOrder_left{
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .CartItem{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .CartItem p{
+        font-size: 11px;
+    }
+    .CartItem img{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .confirmOrder_Summery{
+        width: 100%;
+        margin: 0;
+    }
+
+}

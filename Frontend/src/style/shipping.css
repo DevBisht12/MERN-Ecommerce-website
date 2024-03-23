@@ -1,0 +1,66 @@
+.shipping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.shipping_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.shipping_main h2{
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+.shipping_main input{
+    width: 100%;
+    padding: 10px;
+    max-width: 290px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.shipping_main select{
+    max-width: 290px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.shipping_main select::focus{
+    border: none;
+}
+.TowInput{
+    display: flex;
+    max-width: 290px;
+    flex-direction: row;
+}
+.shipping_main button{
+    background-color: black;
+    color: white;
+    max-width: 290px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    transition: 0.5s;
+}
+.shipping_main button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+

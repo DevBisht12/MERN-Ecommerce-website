@@ -1,0 +1,74 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 400px;
+    padding: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.signup_form h2{
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+.signup_form p{
+    font-size: 11px ;
+    opacity: 80%;
+}
+.signup_form h3{
+    font-size: 12px;
+}
+.signup_form input{
+
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid hsla(260,11%,85%,1);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.signup_form button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    transition: 0.5s;
+}  
+.signup_form a{
+    text-decoration: underline;
+    opacity: 100%;
+}
+.signup_form button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#visibilityIcon{
+    font-size: 18px ;
+    opacity: 50%;
+    cursor: pointer;
+}
+#error{
+    color: red;
+    font-size: 12px;
+}
+@media(max-width:430px){
+    .signup_form{
+        width: 90vw;
+    }
+}

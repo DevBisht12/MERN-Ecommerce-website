@@ -1,0 +1,125 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: hsla(260,11%,95%,1);
+    margin: 1rem;
+    border-radius: 30px;
+}
+.left_section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 28.25rem;
+}
+.left_section p{
+    font-size: 0.8rem;
+}
+.right_section{
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right_section input{
+    width: 15rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.cart_section{
+    position: relative;
+}
+.cart_section span{
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: hsla(11,100%,42.2%,1);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+}
+/* HamburgerMenu */
+
+.hamburger_menu{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .header{
+        display: none !important;
+    }
+    .hamburger_menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+        transition:2s;
+        height: 4rem;
+        align-items: center;
+    }
+    .side_menu{
+        display: flex;
+        justify-content: space-between;
+        width: 6.2rem;
+        align-items: center;
+    }
+    #cartIcon,#userIcon,#menu{
+        font-size: 1.7rem;
+    }
+    .menu{
+        display: none;
+        transition: 2s;
+        
+    }
+    .menu.open{
+        position: absolute;
+        left: 0;
+        top: -2px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    #RxCross2{
+        font-size: 2rem;
+    }
+    .menu.open p{
+        font-size: 1.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    .menu.open input{
+        font-size: 1.5rem;
+        margin: 1rem;
+        border: none;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .menu.open button{
+        background-color: black;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        color: white;
+        width: 23rem;
+        border: none;
+    }
+
+}

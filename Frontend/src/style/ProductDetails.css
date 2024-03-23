@@ -1,0 +1,328 @@
+.productDetails{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+.imgSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgSection img {
+    padding: 0.5rem;
+    width: 35%;
+    object-fit: contain;
+}
+.productDetails_Section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.productDetails_Section p{
+    font-size: 1rem;
+    margin: 0.5rem 0rem;
+}
+.productDetails span{
+    font-size: 13px;
+    opacity: 80%;
+}
+.color{
+    display: flex;
+    flex-direction: column;
+}
+.color span {
+    font-weight: 700;
+}
+.color_main{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.color p{
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.size_main{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.selected_size{
+    background-color: black;
+    color: white;
+}
+.size span{
+    font-weight: 700;
+}
+.size p{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    border: 2px solid hsl(0deg 0% 0% / 17%);
+    align-items: center;
+    display: flex;
+    transition: 1s;
+    justify-content: center;
+} 
+.size p:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.productDetails_Section button{
+    background-color: black;
+    color: white;
+    transition:0.5s;
+    padding: 0.8rem;
+}
+.productDetails_Section button:hover{
+    background-color: white;
+    color: black;
+    transition:0.5s;
+    cursor: pointer;
+}
+.product_summary{
+    margin: 1rem;
+}
+.product_summary summary{
+    font-size: 1rem;
+    font-weight: 700;   
+}
+
+.product_summary p{
+    font-size: 13px;
+    opacity: 80%;
+}
+.alertBox{
+    animation:slideFromRight 0.5s ease-in-out;
+}
+#ratings{
+    color: white;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 10%;
+}
+.RatingSection {
+    text-align: center;
+    margin: 3rem;
+}
+.RatingSection_main{
+    display: flex;
+    justify-content: center;
+
+}
+.leftSection_Rating{
+    display: flex;
+    align-items: center;
+}
+.leftSection_main, .progress_secion{
+    margin: 1.5rem;
+}
+.leftSection_main h2{
+    display: flex;
+    font-size: 4rem;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.progress_secion{
+    display: flex;
+    flex-direction: column;
+}
+.progress_secion progress{
+    border-radius: 5px;
+    height: 10px;
+    width: 20vw;
+        padding-left: 0.5rem;
+    margin: 1rem 0rem;
+}
+.progress_secion span {
+    display: flex;
+    align-items: center;
+}
+.progress_secion progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+  .progress_secion progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  .rateProduct_main{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .rateProduct_rating {
+    display: flex;
+    flex-direction: column;
+}
+  .rateProduct_main textarea{
+    max-width: 400px;
+    width: 350px;
+    max-height: 200px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  .rateProduct_main button{
+    background-color: black;
+    color: white;
+    margin: 0.5rem 0;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0px;
+  }
+  .customer_review{
+     margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+  }
+  .customer_review_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .review_Box{
+    margin: 1.2rem;
+    display: flex;
+    max-width: 100%;
+    width: 40%;
+    background-color: hsla(260, 11%, 95%, 1);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .customer_review_text{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+    justify-content: space-around;
+  }
+  .Skeleton{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+  }
+@keyframes slideFromRight{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.suggested_products {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.suggested_products h3 {
+    font-size: 1.5rem;
+}
+.suggested_products button {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.suggested_products_main {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.mobileImg_Section{
+    display: none;
+}
+@media(max-width:900px){
+    .imgSection{
+        align-items: center;
+    }
+    .RatingSection_main{
+        display: flex;
+
+    }
+    .suggested_products_main{
+        flex-wrap: wrap;
+    }
+    .imgSection img {
+        width: 25vw;
+    }
+}
+@media(max-width:430px){
+    .productDetails{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productDetails_Section{
+        width: 100%;
+    }
+    .leftSection_main h2{
+        font-size: 3rem;
+    }
+    .RatingSection{
+        
+        margin: 0rem 2rem 1rem 2rem;
+    }
+    .RatingSection_main{
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+    .RatingSection h2{
+        padding-left: 0;
+    }
+    .customer_review {
+        margin: 0;
+    }
+    .customer_review_main {
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .review_Box{
+        width: 100%;
+    }
+    .suggested_products_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .suggested_products h3{
+        font-size: 21px;
+    }
+    .imgSection{
+        display: none;
+    }
+    .mobileImg_Section{
+        display: block;
+        width: 100%;
+    }
+}
+

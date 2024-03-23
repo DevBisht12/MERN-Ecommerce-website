@@ -1,0 +1,74 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 400px;
+    padding: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.login_form h2{
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+.login_form h3{
+    font-size:12px;
+}
+.login_form p{
+    font-size: 11px ;
+    opacity: 80%;
+}
+.login_form h3{
+    font-size: 12px;
+}
+.login_form input{
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid hsla(260,11%,85%,1);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.login_form button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px; 
+    transition: 0.5s;
+}   
+.login_form a{
+    text-decoration: underline;
+}
+.login_form button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#visibilityIcon{
+    font-size: 18px ;
+    opacity: 50%;
+    cursor: pointer;
+}
+#error{
+    color: red;
+    font-size: 12px;
+}
+
+@media(max-width:430px){
+ .login_form{
+    width: 90vw;
+ }   
+}
