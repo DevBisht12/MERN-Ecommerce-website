@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./Backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
+    "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "node ./Backend/index.js"
   },
   "keywords": [],
   "author": "",
