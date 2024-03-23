@@ -32,7 +32,7 @@ class PaymentController{
                         },
                         quantity:item.quantity
                     }
-                }),
+                }), 
                 
                 success_url:"http://localhost:5000/payment/success",
                 cancel_url:"http://localhost:5000/payment/cancel"
